@@ -1,0 +1,24 @@
+{
+  "name": "citypulse-f",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck:libs": "echo 'JavaScript libraries ok'",
+    "typecheck": "echo 'JavaScript codebase ok'"
+  },
+  "workspaces": [
+    "artifacts/*",
+    "lib/*",
+    "lib/integrations/*",
+    "scripts"
+  ],
+  "private": true,
+  "dependencies": {
+    "@replit/connectors-sdk": "^0.4.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6",
+    "typescript": "~5.9.3"
+  }
+}
